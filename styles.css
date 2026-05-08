@@ -132,12 +132,16 @@ button {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
-  gap: 56px;
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.8fr);
+  gap: 48px;
   align-items: center;
   min-height: calc(100vh - 72px);
   padding-top: 56px;
   padding-bottom: 56px;
+}
+
+.hero-copy {
+  min-width: 0;
 }
 
 .eyebrow,
@@ -158,11 +162,11 @@ p {
 }
 
 h1 {
-  max-width: 760px;
+  max-width: 720px;
   margin-bottom: 18px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(4rem, 10vw, 8.4rem);
-  line-height: 0.9;
+  font-size: clamp(4rem, 6.4vw, 6.2rem);
+  line-height: 0.96;
   letter-spacing: 0;
 }
 
@@ -224,6 +228,7 @@ h3 {
 
 .hero-visual {
   position: relative;
+  min-width: 0;
 }
 
 .photo-frame,
@@ -237,7 +242,7 @@ h3 {
 
 .photo-frame-large {
   display: grid;
-  min-height: 560px;
+  min-height: 500px;
   place-items: end start;
   padding: 28px;
   color: #fff;
@@ -257,12 +262,11 @@ h3 {
 }
 
 .quick-facts {
-  position: absolute;
-  right: -18px;
-  bottom: 28px;
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  min-width: 360px;
+  width: 100%;
+  margin: 12px 0 0;
   overflow: hidden;
   background: rgba(251, 250, 247, 0.92);
   border: 1px solid var(--line);
@@ -294,6 +298,7 @@ h3 {
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 700;
+  line-height: 1.15;
 }
 
 .section-heading {
